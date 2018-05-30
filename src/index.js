@@ -6,8 +6,8 @@ export default () => {
   const player = greeting();
   console.log(rule);
 
-  const game = (acc) => {
-    if (acc === 0) {
+  const game = (rightAnswers) => {
+    if (rightAnswers === 3) {
       return console.log(`Congratulations, ${player}!`);
     }
 
@@ -18,10 +18,10 @@ export default () => {
 
     if (playerAnswer === correctAnswer) {
       console.log('Correct!');
-      return game(acc - 1);
+      return game(rightAnswers + 1);
     }
     console.log(`'${playerAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
     return console.log(`Let's try again, ${player}!`);
   };
-  return game(3);
+  return game(0);
 };
