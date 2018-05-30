@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-import { evenGame } from '..';
+import { greeting } from '../functions';
 
-evenGame();
+greeting();

@@ -1,6 +1,6 @@
 {
   "name": "brain-games-s280",
-  "version": "1.2.0",
+  "version": "1.4.0",
   "description": "This is a small console brain-game",
   "bin": {
     "brain-games": "dist/bin/brain-games.js",
