@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-import { greeting } from '../functions';
+import greeting from '../functions';
 
 greeting();

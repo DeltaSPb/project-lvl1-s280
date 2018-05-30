@@ -1,18 +1,19 @@
 import readlineSync from 'readline-sync';
-import { greeting, isEven } from './functions';
+import greeting from './functions';
+import { rule, getQuestion, getCorrectQuestion } from './games/even-game';
 
-export const evenGame = () => {
+export default () => {
   const player = greeting();
-  console.log('Answer "yes" if number even otherwise answer "no".');
+  console.log(rule);
 
   const game = (acc) => {
     if (acc === 0) {
       return console.log(`Congratulations, ${player}!`);
     }
 
-    const question = Math.floor(Math.random() * 100);
+    const question = getQuestion();
     console.log(`Question: ${question}`);
-    const correctAnswer = isEven(question) ? 'yes' : 'no';
+    const correctAnswer = getCorrectQuestion(question);
     const playerAnswer = readlineSync.question('Your answer: ');
 
     if (playerAnswer === correctAnswer) {
