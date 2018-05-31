@@ -4,7 +4,8 @@
   "description": "This is a small console brain-game",
   "bin": {
     "brain-games": "dist/bin/brain-games.js",
-    "brain-even": "dist/bin/brain-even.js"
+    "brain-even": "dist/bin/brain-even.js",
+    "brain-calc": "dist/bin/brain-calc.js"
   },
   "main": "index.js",
   "files": [
@@ -14,7 +15,7 @@
     "babel-node": "babel-node",
     "build": "NODE_ENV=production babel src --out-dir dist --source-maps inline",
     "prepublishOnly": "npm run build",
-    "eslint": "eslint" ,
+    "eslint": "eslint",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "DeltaSPb",
