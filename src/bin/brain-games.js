@@ -1,5 +1,3 @@
 #!/usr/bin/env node
 
-import greeting from '../functions';
-
-greeting();
+console.log('Welcom to the Brain Games!');
