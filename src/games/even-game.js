@@ -1,12 +1,11 @@
-
 import playGame from '..';
-import getRandomNum from '../functions';
+import { getRandomNum } from '../utils';
 
-export const rules = 'Answer "yes" if number odd otherwise answer "no".';
-export const isEven = num => num % 2 === 0;
+const rule = 'Answer "yes" if number odd otherwise answer "no".';
+const isEven = num => num % 2 === 0;
 const quesionsForEven = () => {
-  const getQuestion = getRandomNum(1, 100);
-  const getCorrectQuestion = (isEven(getQuestion) ? 'yes' : 'no');
-  return { getQuestion, getCorrectQuestion };
+  const question = getRandomNum(1, 100);
+  const answer = (isEven(question) ? 'yes' : 'no');
+  return { question, answer };
 };
-export default () => playGame(quesionsForEven, rules);
+export default () => playGame(quesionsForEven, rule);

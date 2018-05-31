@@ -1,29 +1,30 @@
 import readlineSync from 'readline-sync';
-// import greeting from './functions';
 
-export default (game, rules) => {
+export default (game, rule) => {
   console.log('Welcome to the Brain Games!');
-  console.log(rules);
-  const player = readlineSync.question('May I have your name? ');
-  console.log(`Hello, ${player}!`);
+  console.log(rule);
+  const playerName = readlineSync.question('May I have your name? ');
+  console.log(`Hello, ${playerName}!`);
 
-  const newGame = (rightAnswers) => {
-    if (rightAnswers === 3) {
-      return console.log(`Congratulations, ${player}!`);
+  const rightAnswers = 3;
+
+  const newGame = (answerCount) => {
+    if (answerCount === rightAnswers) {
+      return console.log(`Congratulations, ${playerName}!`);
     }
 
     const questionsForGame = game();
-    const question = questionsForGame.getQuestion;
-    console.log(`Question: ${question}`);
-    const correctAnswer = questionsForGame.getCorrectQuestion;
+    const questionToPlayer = questionsForGame.question;
+    console.log(`Question: ${questionToPlayer}`);
+    const correctAnswer = questionsForGame.answer;
     const playerAnswer = readlineSync.question('Your answer: ');
 
     if (playerAnswer === correctAnswer) {
       console.log('Correct!');
-      return newGame(rightAnswers + 1);
+      return newGame(answerCount + 1);
     }
     console.log(`'${playerAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
-    return console.log(`Let's try again, ${player}!`);
+    return console.log(`Let's try again, ${playerName}!`);
   };
   return newGame(0);
 };
