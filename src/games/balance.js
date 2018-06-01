@@ -16,7 +16,7 @@ const getBalance = (num) => {
   return Number(digits.join(''));
 };
 
-const quesionsForBalance = () => {
+const gameData = () => {
   const number = getRandomNum(100, 500);
   const question = `${number}`;
   const answer = String(getBalance(number));
@@ -24,4 +24,4 @@ const quesionsForBalance = () => {
   return { question, answer };
 };
 
-export default () => playGame(quesionsForBalance, rule);
+export default () => playGame(gameData, rule);

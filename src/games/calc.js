@@ -3,10 +3,10 @@ import { getRandomNum } from '../utils';
 
 const rule = 'What is the result of the expression? ';
 
-const quesionsForCalc = () => {
+const gameData = () => {
   const firstNumber = getRandomNum(1, 10);
   const secondNumber = getRandomNum(1, 10);
-  const randomSign = getRandomNum(0, 2);
+  const randomSign = getRandomNum(0, 3);
 
   let question;
   let answer;
@@ -28,4 +28,4 @@ const quesionsForCalc = () => {
   }
   return { question, answer };
 };
-export default () => playGame(quesionsForCalc, rule);
+export default () => playGame(gameData, rule);
