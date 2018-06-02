@@ -1,5 +1,5 @@
 import playGame from '..';
-import { getRandomNum } from '../utils';
+import getRandomNum from '../utils';
 
 const rule = 'What is the result of the expression? ';
 

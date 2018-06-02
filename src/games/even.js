@@ -1,5 +1,5 @@
 import playGame from '..';
-import { getRandomNum } from '../utils';
+import getRandomNum from '../utils';
 
 const rule = 'Answer "yes" if number odd otherwise answer "no".';
 const isEven = num => num % 2 === 0;
