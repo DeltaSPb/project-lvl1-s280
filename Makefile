@@ -3,6 +3,7 @@ install:
 	npm install
 
 start:
+
 	npm run babel-node -- src/bin/brain-games.js
 
 start-even:
@@ -25,9 +26,14 @@ start-progression:
 
 	npm run babel-node -- src/bin/brain-progression.js
 
+start-prime:
+
+	npm run babel-node -- src/bin/brain-prime.js
+
 publish: 
 
 	npm publish
 
-lint: 
+lint:
+
 	npm run eslint -- src 

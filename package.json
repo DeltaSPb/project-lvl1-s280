@@ -1,6 +1,6 @@
 {
   "name": "brain-games-s280",
-  "version": "1.8.5",
+  "version": "1.9.5",
   "description": "This is a small console brain-game",
   "bin": {
     "brain-games": "dist/bin/brain-games.js",
@@ -8,7 +8,8 @@
     "brain-calc": "dist/bin/brain-calc.js",
     "brain-gcd": "dist/bin/brain-gcd.js",
     "brain-balance": "dist/bin/brain-balance.js",
-    "brain-progression": "dist/bin/brain-progression.js"
+    "brain-progression": "dist/bin/brain-progression.js",
+    "brain-prime": "dist/bin/brain-prime.js"
   },
   "main": "index.js",
   "files": [
