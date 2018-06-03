@@ -12,8 +12,24 @@ Description
 This project includes a set of console games, where you can solve some problems.
 For example:
 
-    What number is missing in this progression?
-    5 7 9 11 13 .. 17 19 21 23
+    $ brain-balance
+    
+    Welcome to the Brain Game!
+    Balance the given number.
+    
+    May I have your name? Sam
+    Hello, Sam!
+    
+    Question: 215
+    Your answer: 233
+    Correct!
+    Question: 4181
+    Your answer: 3344
+    Correct!
+    Question: 355
+    Your answer: 445
+    Correct!
+    Congratulations, Sam!
 
 
 Installation
