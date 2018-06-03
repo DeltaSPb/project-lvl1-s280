@@ -38,8 +38,11 @@ Installation
     npm install brain-games-s280
 
 
-Usage
+How to play?
 -----------------------------------
+
+After installation, you can enter one of the the selected commands in the terminal
+
 
     $ brain-even
     $ brain-calc
