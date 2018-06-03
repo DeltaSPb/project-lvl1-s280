@@ -1,14 +1,14 @@
 import playGame from '..';
 import getRandomNum from '../utils';
 
-const rule = 'Is this number prime?\nAnswer "yes" or "no"';
+const rule = 'Is this number prime?';
 
 const isPrime = (num) => {
   if (num < 2) {
     return false;
   }
 
-  for (let i = 2; i < num; i += 1) {
+  for (let i = 2; i <= num / 2; i += 1) {
     if (num % i === 0) {
       return false;
     }
