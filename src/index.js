@@ -14,10 +14,8 @@ export default (game, rule) => {
       return;
     }
 
-    const { question, answer } = game();
-    const questionToPlayer = question;
+    const { question: questionToPlayer, answer: correctAnswer } = game();
     console.log(`\nQuestion: ${questionToPlayer}`);
-    const correctAnswer = answer;
     const playerAnswer = readlineSync.question('Your answer: ');
 
     if (playerAnswer === correctAnswer) {
